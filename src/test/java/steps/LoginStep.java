@@ -45,7 +45,7 @@ public class LoginStep extends BaseUtil{
 
     @And("^I enter the following for Login$")
     public void iEnterTheFollowingForLogin(DataTable table) throws Throwable {
-        //Create an ArrayList
+        /*//Create an ArrayList
         List<User> users =  new ArrayList<User>();
         //Store all the users
         users = table.asList(User.class);
@@ -54,7 +54,7 @@ public class LoginStep extends BaseUtil{
 
         for (User user: users){
            page.Login(user.username, user.password);
-        }
+        }*/
     }
 
 
