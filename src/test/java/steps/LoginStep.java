@@ -36,26 +36,7 @@ public class LoginStep extends BaseUtil{
     }
 
 
-    @And("^I click login button$")
-    public void iClickLoginButton() throws Throwable {
-        LoginPage page = new LoginPage(base.Driver);
-        page.ClickLogin();
-    }
-
-
-    @And("^I enter the following for Login$")
-    public void iEnterTheFollowingForLogin(DataTable table) throws Throwable {
-        /*//Create an ArrayList
-        List<User> users =  new ArrayList<User>();
-        //Store all the users
-        users = table.asList(User.class);
-
-        LoginPage page = new LoginPage(base.Driver);
-
-        for (User user: users){
-           page.Login(user.username, user.password);
-        }*/
-    }
+    
 
 
 
