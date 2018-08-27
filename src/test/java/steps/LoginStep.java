@@ -12,6 +12,9 @@ import pages.LoginPage;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LoginStep extends BaseUtil{
 
@@ -28,6 +31,7 @@ public class LoginStep extends BaseUtil{
         System.out.println("Navigate Login Page");
         //base.Driver.navigate().to("http://www.executeautomation.com/demosite/Login.html");
 		base.Driver.navigate().to("http://integration-tms.mobeewave-hive.com/#/login");
+		Thread.sleep(2000);
     }
 
 
