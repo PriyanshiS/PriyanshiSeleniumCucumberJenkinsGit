@@ -32,6 +32,9 @@ public class LoginStep extends BaseUtil{
         //base.Driver.navigate().to("http://www.executeautomation.com/demosite/Login.html");
 		base.Driver.navigate().to("http://integration-tms.mobeewave-hive.com/#/login");
 		Thread.sleep(2000);
+		WebElement id = driver.findElement(By.xpath("/html/body/div/div/div/div[2]/form[1]/div[2]/input"));
+		id.isDisplayed();
+		Thread.sleep(4000);
     }
 
 
