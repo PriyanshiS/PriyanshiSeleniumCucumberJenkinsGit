@@ -35,6 +35,23 @@ public class LoginStep extends BaseUtil{
 		WebElement id = base.Driver.findElement(By.xpath("/html/body/div/div/div/div[2]/form[1]/div[2]/input"));
 		id.isDisplayed();
 		Thread.sleep(4000);
+		WebElement password = base.Driver.findElement(By.xpath("/html/body/div/div/div/div[2]/form[1]/div[3]/input"));
+		password.isDisplayed();
+		Thread.sleep(4000);
+		WebElement loginB = base.Driver.findElement(By.id("login"));
+		loginB.isDisplayed();
+		System.out.println("The Admin text box is there " + id.isDisplayed());
+		System.out.println("The password text box is there " + password.isDisplayed());
+		System.out.println("The Login Button is there " + loginB.isDisplayed());
+		
+		WebElement usernametext = base.Driver.findElement(By.xpath("/html/body/div/div/div/div[2]/form[1]/div[2]/input"));
+		usernametext.sendKeys("priyanshi.mobeewave@gmail.com");
+		Thread.sleep(2000);
+		WebElement passwordtext = base.Driver.findElement(By.xpath("/html/body/div/div/div/div[2]/form[1]/div[3]/input"));
+		passwordtext.sendKeys("test123test");
+		Thread.sleep(2000);
+		WebElement loginTab  = base.Driver.findElement(By.xpath("//*[@id=\"login\"]"));
+		loginTab.click();
     }
 
 
