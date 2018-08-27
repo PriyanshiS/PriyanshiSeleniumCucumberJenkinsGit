@@ -13,9 +13,6 @@ import pages.LoginPage;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Karthik on 10/15/2016.
- */
 public class LoginStep extends BaseUtil{
 
     private  BaseUtil base;

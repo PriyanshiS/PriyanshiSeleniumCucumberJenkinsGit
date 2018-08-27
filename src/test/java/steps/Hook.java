@@ -7,9 +7,6 @@ import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * Created by Karthik on 10/17/2016.
- */
 public class Hook extends BaseUtil{
 
 
@@ -23,10 +20,6 @@ public class Hook extends BaseUtil{
     public void InitializeTest() {
 
         System.out.println("Opening the browser : Firefox");
-
-        /*System.setProperty("webdriver.firefox.marionette", "D:\\Libs\\geckodriver.exe");
-        base.Driver = new FirefoxDriver();*/
-
 
         //Chrome driver
         System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
