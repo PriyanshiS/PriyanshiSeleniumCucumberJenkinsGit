@@ -32,15 +32,13 @@ public class LoginStep extends BaseUtil{
 
         System.out.println("Navigate Login Page");
         //base.Driver.navigate().to("http://www.executeautomation.com/demosite/Login.html");
-		base.Driver.navigate().to("http://google.ca");
-		System.out.println("1");
+		base.Driver.navigate().to("http://integration-tms.mobeewave-hive.com/#/login");
     }
 
 
     @And("^I click login button$")
     public void iClickLoginButton() throws Throwable {
-        System.out.println("2");
-		LoginPage page = new LoginPage(base.Driver);
+        LoginPage page = new LoginPage(base.Driver);
         page.ClickLogin();
     }
 
@@ -48,8 +46,7 @@ public class LoginStep extends BaseUtil{
     @And("^I enter the following for Login$")
     public void iEnterTheFollowingForLogin(DataTable table) throws Throwable {
         //Create an ArrayList
-        System.out.println("3");
-		List<User> users =  new ArrayList<User>();
+        List<User> users =  new ArrayList<User>();
         //Store all the users
         users = table.asList(User.class);
 
@@ -60,19 +57,7 @@ public class LoginStep extends BaseUtil{
         }
     }
 
-    @And("^I enter ([^\"]*) and ([^\"]*)$")
-    public void iEnterUsernameAndPassword(String userName, String password) throws Throwable {
-        System.out.println("4");
-		System.out.println("UserName is : " + userName);
-        System.out.println("Password is : " + password);
-    }
 
-    @Then("^I should see the userform page wrongly$")
-    public void iShouldSeeTheUserformPageWrongly() throws Throwable {
-
-        System.out.println("5");
-		Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("sdfgdsfsd")).isDisplayed(), true);
-    }
 
 
     public class User {
