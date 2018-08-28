@@ -53,6 +53,16 @@ public class LoginStep extends BaseUtil{
 		WebElement loginTab  = base.Driver.findElement(By.xpath("//*[@id=\"login\"]"));
 		loginTab.click();
     }
+	
+	public class User {
+        public String username;
+        public String password;
+
+        public User(String userName, String passWord) {
+            username= userName;
+            password = passWord;
+        }
+    }
 
 
 }
